@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setIcon() {
         // Access specific icon by reference
-        val iconicsById = IconicsDrawable(this, FontAwesome.Icon.faw_home).apply {
+        val iconicsById = IconicsDrawable(this, FontAwesome.Icon.faw_box).apply {
             colorInt = Color.BLACK
             sizeDp = 80
         }
@@ -37,6 +37,6 @@ class MainActivity : AppCompatActivity() {
         val iconicsByIndex = IconicsDrawable(this, FontAwesome.icons[1]).apply {
             sizeDp = 80
         }
-        binding.sivIconMain.setImageDrawable(iconicsByIndex)
+        binding.sivIconMain.setImageDrawable(iconicsById)
     }
 }
